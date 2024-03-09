@@ -2,9 +2,6 @@
 
 This is a simplified Video Clone web application, built using React.js. It allows users to browse a list of predefined video thumbnails, click on a thumbnail to view the video on a separate page, and see basic information about the video such as title and description.
 
-## Available Scripts
-
-In the project directory, you can run:
 
 ## Features
 
