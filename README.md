@@ -35,4 +35,5 @@ This is a simplified Video Clone web application, built using React.js. It allow
 ![video-clone-1](https://github.com/Shrutij512/video-clone/assets/132148988/2d755801-8341-43bf-bad2-32ae3bba9f8a)
 
 ### Video Player Page
-![video-clone-2](https://github.com/Shrutij512/video-clone/assets/132148988/a2e00cdb-f288-4444-ac7a-c91858f26233)
+![video-clone-2](https://github.com/Shrutij512/video-clone/assets/132148988/a1c5f5cf-e087-456a-a7f7-cf7c6d40ece8)
+
