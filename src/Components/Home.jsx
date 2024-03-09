@@ -6,6 +6,7 @@ const Home = () => {
 
     const [currPage, setCurrPage] = useState(0);
     const [videos, setVideos] = useState([]);
+    const totalPages = 10;
 
     const url = `https://internship-service.onrender.com/videos?page=${currPage}`
 
@@ -30,7 +31,7 @@ const Home = () => {
         <div >
             <Navbar />
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 m-10 pt-[12%] sm:pt-[10%] md:pt-[10%] lg:pt-[10%]'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 m-10 pt-[15%] ml-[20%] sm:pt-[10%] sm:ml-[10%] md:pt-[10%] md:ml-[5%] lg:pt-[10%]'>
                 {videos && videos?.map((video, idx) => (
                     <Thumbnail video={video} key={idx} page={currPage} />
                 ))}
@@ -41,7 +42,7 @@ const Home = () => {
                 <div className='m-5' >
                     {currPage}
                 </div>
-                <button className='bg-red-200 p-2 border-2 rounded-xl hover:bg-red-600' onClick={() => { handlePageChange(1) }}>Next</button>
+                <button className='bg-red-200 p-2 border-2 rounded-xl hover:bg-red-600' onClick={() => { handlePageChange(1) }} disabled={currPage === totalPages - 1}>Next</button>
             </div>
         </div>
     )

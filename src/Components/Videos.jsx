@@ -15,20 +15,6 @@ const Videos = () => {
         fetchData();
     }, [page]);
 
-    useEffect(() => {
-        filterById();
-    }, [])
-
-    const filterById = () => {
-        const filteredVideo = videos.filter((v) => {
-            console.log(v.postId, videoId)
-            return v.postId == videoId
-        })
-        setVideo(filteredVideo)
-        // console.log(filteredVideo)
-    }
-
-
     async function fetchData() {
         try {
             const response = await fetch(`https://internship-service.onrender.com/videos?page=${page}`)
@@ -50,7 +36,7 @@ const Videos = () => {
 
     return (
         <div>
-            <div className='fixed w-[100%] h-[70%] '>
+            <div className='fixed w-[100%] h-[68%] mt-5'>
                 <ReactPlayer url={posts[0]?.submission.mediaUrl} controls={true} width='100%' height='100%' fullscreen={true} />
                 <div className="flex items-center gap-2 m-[1%]">
                     <img

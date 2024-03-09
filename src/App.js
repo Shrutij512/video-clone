@@ -6,8 +6,6 @@ import Videos from './Components/Videos';
 function App() {
   return (
     <div className='bg-purple-300'>
-      {/* <Home />
-      <Videos /> */}
       <RouteComp />
     </div>
   );
